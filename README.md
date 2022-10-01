@@ -85,7 +85,7 @@ bash ./ruesandora.sh
 
 * Şifre vs. girip private keyi alın:
 
-![image](https://user-images.githubusercontent.com/101149671/193398783-987cd7e0-4066-4e9f-be95-444b89b41984.png)
+![image](https://user-images.githubusercontent.com/101149671/193400080-9dae0666-a6cd-4530-aa60-aff8ad43f09f.png)
 
 ## Yukarıda ruesandora.sh komutunu girdikten sonra az önce aldığımız private keyi girip enterliyoruz:
 
