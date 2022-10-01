@@ -11,8 +11,14 @@ sudo apt-get update && sudo apt-get upgrade
 
 ## şimdi Docker Kurulumu Yapıyoruz:
 ```
-sudo apt install docker.io
+sudo apt install docker.io -y
+```
+
+```
 sudo systemctl enable --now docker
+```
+
+```
 systemctl restart docker.service
 ```
 
