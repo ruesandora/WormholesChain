@@ -8,7 +8,7 @@ nano ruesandora.sh
 ## İçinde ki her şeyi siliyoruz ve altta ki komutu giriyoruz:
 
 * Silmenin kısa yolu sol en üst başa gelip ctrl+k yaparsanız her satırı sırayla siler.
-* Komutu yapıştırdıktan sonra: CTRL + Y + ENTER
+* Komutu yapıştırdıktan sonra: CTRL +  X + Y + ENTER
 
 ```
 #!/bin/bash
