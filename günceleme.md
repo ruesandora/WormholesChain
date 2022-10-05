@@ -77,10 +77,6 @@ docker exec -it wormholes /usr/bin/cat /wm/.wormholes/wormholes/nodekey
 bash ./ruesandora.sh
 ```
 
-## Node kontrol (buradan teyit etmeyi doğru bulmuyorum, ileride anlayacaksıonız): 
-```
-wget -O monitor.sh https://raw.githubusercontent.com/mesahin001/wormholes/master/monitor.sh && chmod +x monitor.sh && ./monitor.sh
-```
 
 
 
