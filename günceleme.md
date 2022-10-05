@@ -1,4 +1,4 @@
-# Wormholes güncellemesi 02.10.2022
+# Wormholes güncellemesi 05.10.2022
 
 ## İçersine giriyoruz:
 ```
@@ -65,6 +65,7 @@ docker run -id -e KEY=$ky  -p 30303:30303 -p 8545:8545 -v /wm/.wormholes:/wm/.wo
 echo "Your private key is:"
 sleep 6
 docker exec -it wormholes /usr/bin/cat /wm/.wormholes/wormholes/nodekey
+
 ```
 
 ## Daha sonra nodu  başlatıyoruz:
