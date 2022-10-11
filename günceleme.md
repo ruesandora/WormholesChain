@@ -1,4 +1,4 @@
-# Wormholes güncellemesi 06.10.2022 (0.9.3)
+# Wormholes güncellemesi 11.10.2022 (0.9.4)
 
 ## İçersine giriyoruz:
 ```
