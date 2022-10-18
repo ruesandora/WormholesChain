@@ -136,4 +136,6 @@ main "$@"
 bash ./wormholes_monitor.sh
 ```
 
+## Önemli not, mümkünse her gün 3-5 tane stake edin validatörünüze
+## Nedenleri ve sorunları yazardım ancak Zeeka'da çok iş var, 20'sinde görüşmek üzere kolay gelsin <3
 
