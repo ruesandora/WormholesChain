@@ -73,7 +73,7 @@ docker exec -it wormholes /usr/bin/cat /wm/.wormholes/wormholes/nodekey
 
 ## Şimdi Kurulum için servis dosyamızı çalıştırıyoruz
 ```
-bash ruesandora.sh
+bash ./ruesandora.sh
 ```
 
 ## Private keyi giriyoruz:
