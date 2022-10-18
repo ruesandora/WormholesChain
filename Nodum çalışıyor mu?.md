@@ -12,7 +12,7 @@ curl -X POST -H "Content-Type:application/json" --data '{"jsonrpc":"2.0","method
 
 ## Kurulum için servis dosyası oluşturuyoruz aşağıdaki komudu yazın 
  ```
-nano ruesandora.sh 
+nano bash ./ruesandora.sh
 ```
 
 ## Açılan ekranda CTRL+K ile tektek satırları silin aşağıdaki kodları tek seferde copy past yapın CTRL+X ve Y ile kaydedip çıkın:
@@ -84,7 +84,7 @@ bash ruesandora.sh
 ## Node bloklarını izlemek servis dosyası oluşturuyoruz aşağıdaki komudu yazın 
 
 ```
-ruesandora_monitor.sh
+bash ./ruesandora_monitor.sh
 ```
 
 
