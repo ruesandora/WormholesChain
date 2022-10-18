@@ -84,7 +84,7 @@ bash ./ruesandora.sh
 ## Node bloklarını izlemek servis dosyası oluşturuyoruz aşağıdaki komudu yazın 
 
 ```
-bash ./ruesandora_monitor.sh
+nano ruesandora_monitor.sh
 ```
 
 
