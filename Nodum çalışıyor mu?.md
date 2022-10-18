@@ -133,7 +133,7 @@ main "$@"
 
 ## Güncel blokları görmek için servis dosyası çalıştırıyoruz aşağıdaki komudu yazın 
 ```
-bash ./wormholes_monitor.sh
+bash ./ruesandora_monitor.sh
 ```
 
 ## Önemli not, mümkünse her gün 3-5 tane stake edin validatörünüze
