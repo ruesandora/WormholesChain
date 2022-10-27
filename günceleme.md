@@ -15,7 +15,7 @@ V0.9.5
 ```
 nano ruesandora.sh 
 ```
-##Açılan ekranda CTRL+K ile tektek satırları silin aşağıdaki kodları tek seferde copy past yapın CTRL+X ve Y ile kaydedip çıkın
+## Açılan ekranda CTRL+K ile tektek satırları silin aşağıdaki kodları tek seferde copy past yapın CTRL+X ve Y ile kaydedip çıkın
 
 
 ```
