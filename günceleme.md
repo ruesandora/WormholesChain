@@ -2,22 +2,23 @@
 
 
 ## Versiyon kontrol ediyoruz güncel versiyon V0.9.6
-
+```
 curl -X POST -H "Content-Type:application/json" --data '{"jsonrpc":"2.0","method":"eth_version","id":64}' http://127.0.0.1:8545
-
-##Çıktı
+```
+## Çıktı
+```
 V0.9.5
+```
 
 
-
-##Kurulum için servis dosyası oluşturuyoruz aşağıdaki komudu yazın 
-
+## Kurulum için servis dosyası oluşturuyoruz aşağıdaki komudu yazın 
+```
 nano ruesandora.sh 
-
+```
 ##Açılan ekranda CTRL+K ile tektek satırları silin aşağıdaki kodları tek seferde copy past yapın CTRL+X ve Y ile kaydedip çıkın
 
 
-
+```
 #!/bin/bash
 #check docker cmd
 which docker >/dev/null 2>&1
@@ -73,30 +74,31 @@ docker run -id -p 30303:30303 -p 8545:8545 -v /wm/.wormholes:/wm/.wormholes --na
 echo "Your private key is:"
 sleep 6
 docker exec -it wormholes /usr/bin/cat /wm/.wormholes/wormholes/nodekey
-
+```
 
 
 ## Şimdi Kurulum için servis dosyamızı çalıştırıyoruz /// V0.9.5
-
+```
 bash ./ruesandora.sh 
-
+```
 
 ## Versiyon kontrol ediyoruz güncel versiyon V0.9.6
-
+```
 curl -X POST -H "Content-Type:application/json" --data '{"jsonrpc":"2.0","method":"eth_version","id":64}' http://127.0.0.1:8545
-
-##Çıktı
+```
+## Çıktı
+```
 V0.9.6
-
+```
 
 
 
 ## Node bloklarını izlemek servis dosyası oluşturuyoruz aşağıdaki komudu yazın ( Daha önceki bunu kurduysanız bu adımıgeçin)
-
+```
 nano monitor.sh 
-
-##açılan ekranda CTRL+K ile tektek satırları silin aşağıdaki kodları tek seferde copy past yapın CTRL+X ve Y ile kaydedip çıkın
-
+```
+## açılan ekranda CTRL+K ile tektek satırları silin aşağıdaki kodları tek seferde copy past yapın CTRL+X ve Y ile kaydedip çıkın
+```
 #!/bin/bash
 function info(){
      cn=0
@@ -136,9 +138,9 @@ function main(){
 }
 
 main "$@"
-
+```
 
 ## Güncel blokları görmek için servis dosyası çalıştırıyoruz aşağıdaki komudu yazın 
-
+```
 bash ./monitor.sh
-
+```
