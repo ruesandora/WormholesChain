@@ -26,7 +26,7 @@ bash ./wormholes_install.sh
 ## Nodun eşleştiğini görmek için aşağıdaki komudu giriyoruz:
 
 ```
-nano wormholes_monitor.sh 
+nano ruesandora.sh
 ```
 ## Aşğıdaki komutları tek seferde copy past yapın  CTRL X ve Y yapıp entera basıp kaydedip çıkıyoruz 
 ```
@@ -70,7 +70,7 @@ main "$@"
 ## Güncel blokları görmek için servis dosyası çalıştırıyoruz aşağıdaki komudu yazın
 
 ```
-bash ./wormholes_monitor.sh
+bash ./ruesandora.sh
 ```
 
 ## Bir süre beklediniz Peer bulamadıysanız nodu restart yapın:
