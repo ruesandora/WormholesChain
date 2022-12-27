@@ -1,23 +1,23 @@
-<h1 align="center"> Wormholes Chain V.0.11.1 </h1>
 
-![image](https://user-images.githubusercontent.com/101149671/193398451-1924bbed-747f-4493-a148-b9ee0837028e.png)
 
-# Sorularınız için: [Türkiye Telegram Grubu](https://t.me/WormholesChainTurkish)
+## Versiyon kontrol ediyoruz güncel versiyon V0.11.1
 
-## Daha önce V.0.11.1 kurduysanız ve Peer bağlantı hatası alıyorsanız aşağıdaki komutları girin:
-```
-docker stop wormholes && docker rm wormholes && docker rmi wormholestech/wormholes:v1
-```
-```
-rm -rf /wm
-```
+curl -X POST -H "Content-Type:application/json" --data '{"jsonrpc":"2.0","method":"eth_version","id":64}' http://127.0.0.1:8545
 
-## Kurulum için servis dosyası oluşturuyoruz aşağıdaki komudu yazın 
-```
+##Çıktı
+V0.11.0
+
+
+
+##Kurulum için servis dosyası oluşturuyoruz aşağıdaki komudu yazın 
+
 nano ruesandora.sh 
-```
-## Açılan ekranda eğer eski kurulum dosyası varsa CTRL+K ile satır satır silin aşağıdaki kodları tek seferde copy past yapın CTRL+X ve Y ile kaydedip çıkın
-```
+
+##Açılan ekranda CTRL+K ile tektek satırları silin aşağıdaki kodları tek seferde copy past yapın CTRL+X ve Y ile kaydedip çıkın
+
+
+
+
 #!/bin/bash
 #check docker cmd
 echo "Script version Number: v0.11.1"
@@ -119,28 +119,37 @@ do
                 sleep 5s
         fi
 done
-```
 
-## Şimdi Kurulum için servis dosyamızı çalıştırıyoruz
-```
+
+
+
+
+
+
+
+
+## Şimdi Kurulum için servis dosyamızı çalıştırıyoruz /// V0.11.1
+
 bash ./ruesandora.sh 
-```
+
 
 ## Versiyon kontrol ediyoruz güncel versiyon V0.11.1
 
-```
 curl -X POST -H "Content-Type:application/json" --data '{"jsonrpc":"2.0","method":"eth_version","id":64}' http://127.0.0.1:8545
-```
+
+##Çıktı
+V0.11.1
 
 
-# Nodun eşleştiğini görmek için aşağıdaki komudu giriyoruz:
 
-```
+
+## Node bloklarını izlemek servis dosyası oluşturuyoruz aşağıdaki komudu yazın ( Daha önceki bunu kurduysanız bu adımıgeçin)
+
 nano monitor.sh 
-```
-## Açılan ekranda eğer eski kurulum dosyası varsa CTRL+K ile satır satır silin aşağıdaki kodları tek seferde copy past yapın CTRL+X ve Y ile kaydedip çıkın
 
-```
+##açılan ekranda CTRL+K ile tektek satırları silin aşağıdaki kodları tek seferde copy past yapın CTRL+X ve Y ile kaydedip çıkın
+
+
 
 #!/bin/bash
 function info(){
@@ -181,17 +190,17 @@ function main(){
 }
 
 main "$@"
-```
 
-## Güncel blokları görmek için servis dosyası çalıştırıyoruz aşağıdaki komudu yazın
 
-```
+
+
+
+
+
+## Güncel blokları görmek için servis dosyası çalıştırıyoruz aşağıdaki komudu yazın 
+
 bash ./monitor.sh
-```
 
-## Bir süre beklediniz Peer bulamadıysanız nodu restart yapın:
 
-```
-docker restart wormholes
-```
+
 
