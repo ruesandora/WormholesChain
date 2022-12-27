@@ -1,17 +1,17 @@
-# Wormholes güncellemesi  V.0.11.0 ( Ağ sıfırlandı yeniden başladı)
+# Wormholes güncellemesi  V.0.11.1 ( Ağ sıfırlandı yeniden başladı)
 
 ## Aşağıdaki komutları giriyoruz gerekli güncellemeyi indirip, açıyoruz:
 ```
-wget https://github.com/wormholes-org/wormholes/archive/refs/tags/v0.11.0.tar.gz
+wget https://github.com/wormholes-org/wormholes/archive/refs/tags/v0.11.1.tar.gz
 ```
 ```
-tar -xvf v0.11.0.tar.gz
+tar -xvf v0.11.1.tar.gz
 ```
 
 ## İlgili klasörün içine giriyoruz:
 
 ```
-cd wormholes-0.11.0
+cd wormholes-0.11.1
 ```
 
 ## Daha sonra nodu  başlatıyoruz:
