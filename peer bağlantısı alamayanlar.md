@@ -193,5 +193,8 @@ main "$@"
 bash ./monitor.sh
 ```
 
-
-
+## Hiç olmazsa silip baştan kurun:
+```
+docker stop wormholes && docker rm wormholes && docker rmi wormholestech/wormholes:v1
+rm -rf /wm
+```
