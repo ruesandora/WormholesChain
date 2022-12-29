@@ -1,10 +1,10 @@
-<h1 align="center"> Wormholes Chain V.0.11.2 </h1>
+<h1 align="center"> Wormholes Chain V.0.11.3 </h1>
 
 ![image](https://user-images.githubusercontent.com/101149671/193398451-1924bbed-747f-4493-a148-b9ee0837028e.png)
 
 # Sorularınız için: [Türkiye Telegram Grubu](https://t.me/WormholesChainTurkish)
 
-## Daha önce V.0.11.1 kurduysanız ve Peer bağlantı hatası alıyorsanız aşağıdaki komutları girin:
+## Daha önce V.0.11.2 kurduysanız ve Peer bağlantı hatası alıyorsanız aşağıdaki komutları girin:
 ```
 docker stop wormholes && docker rm wormholes && docker rmi wormholestech/wormholes:v1
 ```
@@ -20,7 +20,7 @@ nano ruesandora.sh
 ```
 #!/bin/bash
 #check docker cmd
-echo "Script version Number: v0.11.2"
+echo "Script version Number: v0.11.3"
 which docker >/dev/null 2>&1
 if  [ $? -ne 0 ] ; then
         echo "docker not found, please install first!"
