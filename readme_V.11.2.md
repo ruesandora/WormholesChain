@@ -1,4 +1,4 @@
-<h1 align="center"> Wormholes Chain V.0.11.1 </h1>
+<h1 align="center"> Wormholes Chain V.0.11.2 </h1>
 
 ![image](https://user-images.githubusercontent.com/101149671/193398451-1924bbed-747f-4493-a148-b9ee0837028e.png)
 
@@ -20,7 +20,7 @@ nano ruesandora.sh
 ```
 #!/bin/bash
 #check docker cmd
-echo "Script version Number: v0.11.1"
+echo "Script version Number: v0.11.2"
 which docker >/dev/null 2>&1
 if  [ $? -ne 0 ] ; then
         echo "docker not found, please install first!"
@@ -38,7 +38,7 @@ if [ $? -ne 0 ] ; then
         exit
 fi
 
-vt5=1672137578
+vt5=1670383155
 vl=$(wget https://docker.wormholes.com/version>/dev/null 2>&1 && cat version|awk '{print $1}')
 vr=$(cat version|awk '{print $2}' && rm version)
 worm=$(docker images|grep "wormholestech/wormholes"|grep "v1")
@@ -126,7 +126,7 @@ done
 bash ./ruesandora.sh 
 ```
 
-## Versiyon kontrol ediyoruz güncel versiyon V0.11.1
+## Versiyon kontrol ediyoruz güncel versiyon V0.11.2
 
 ```
 curl -X POST -H "Content-Type:application/json" --data '{"jsonrpc":"2.0","method":"eth_version","id":64}' http://127.0.0.1:8545
