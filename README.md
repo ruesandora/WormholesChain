@@ -145,7 +145,7 @@ done
 bash ./ruesandora.sh 
 ```
 
-## Versiyon kontrol ediyoruz güncel versiyon V0.11.4
+## Versiyon kontrol ediyoruz güncel versiyon V0.11.6
 
 ```
 curl -X POST -H "Content-Type:application/json" --data '{"jsonrpc":"2.0","method":"eth_version","id":64}' http://127.0.0.1:8545
