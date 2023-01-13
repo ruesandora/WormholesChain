@@ -1,26 +1,25 @@
-<h1 align="center"> Wormholes Chain V.0.11.6 </h1>
 
-![image](https://user-images.githubusercontent.com/101149671/193398451-1924bbed-747f-4493-a148-b9ee0837028e.png)
 
-# Sorularınız için: [Türkiye Telegram Grubu](https://t.me/WormholesChainTurkish)
+## Versiyon kontrol ediyoruz güncel versiyon V0.11.1
+```
+curl -X POST -H "Content-Type:application/json" --data '{"jsonrpc":"2.0","method":"eth_version","id":64}' http://127.0.0.1:8545
+```
+## Çıktı
+```
+V0.11.0
+```
 
-##  Peer bağlantı hatası alıyorsanız aşağıdaki komutları girin ( Yeni kurduğunuzda 2-3 dk bekleyin bazen peer bir süre sonra buluyor, yinede peer bulmuyorsa aşağıdaki komutları girip tekrar kurulumu yapmanızı öneririm):
-```
-docker stop wormholes && docker rm wormholes && docker rmi wormholestech/wormholes:v1
-```
-```
-rm -rf /wm
-```
 
 ## Kurulum için servis dosyası oluşturuyoruz aşağıdaki komudu yazın 
 ```
 nano ruesandora.sh 
 ```
-## Açılan ekranda eğer eski kurulum dosyası varsa CTRL+K ile satır satır silin aşağıdaki kodları tek seferde copy past yapın CTRL+X ve Y ile kaydedip çıkın
+##Açılan ekranda CTRL+K ile tektek satırları silin aşağıdaki kodları tek seferde copy past yapın CTRL+X ve Y ile kaydedip çıkın
+
 ```
 #!/bin/bash
 #check docker cmd
-echo "Script version Number: v0.11.6"
+echo "Script version Number: v0.11.1"
 which docker >/dev/null 2>&1
 if  [ $? -ne 0 ] ; then
         echo "docker not found, please install first!"
@@ -38,7 +37,7 @@ if [ $? -ne 0 ] ; then
         exit
 fi
 
-vt5=1670383155
+vt5=1672137578
 vl=$(wget https://docker.wormholes.com/version>/dev/null 2>&1 && cat version|awk '{print $1}')
 vr=$(cat version|awk '{print $2}' && rm version)
 worm=$(docker images|grep "wormholestech/wormholes"|grep "v1")
@@ -103,29 +102,10 @@ if [ -n "$ky" ]; then
         fi
 fi
 
-docker pull wormholestech/wormholes:v1
-
-docker images|awk '{print $1,$2}'|while read img ver
-do
-        if [[ $img == "wormholestech/wormholes" ]] && [[ $ver == "v1" ]];then
-                echo "true">temp
-                break
-        fi
-done
-
-if [[ -f temp ]];then
-        rm temp
-        echo -e "\n\033[32mdocker pull images complete. Start running the container, please wait\033[0m\n"
-else
-        echo -e "\033[31mdocker pull err, please check your network\033[0m"
-        exit 1
-fi
-
-docker run -id -p 30303:30303 -p 8545:8545 -v /wm/.wormholes:/wm/.wormholes --name wormholes wormholestech/wormholes:v1
+docker run -id -p 30303:30303 -p 8545:8545 -v /wm/.wormholes:/wm/.wormholes --name wormholes wormholestech/wormholes:v1 >/dev/null 2>&1 &
 
 while true
 do
-	echo  -e "running the container...\n"
         s=$(docker ps -a|grep "Up"|awk '{if($NF == "wormholes") print $NF}'|wc -l)
         key=$(docker exec -it wormholes /usr/bin/ls -l /wm/.wormholes/wormholes/nodekey 2>/dev/null)
         if [[ $s -gt 0 ]] && [[ "$key" =~ "nodekey" ]];then
@@ -140,27 +120,28 @@ do
 done
 ```
 
-## Şimdi Kurulum için servis dosyamızı çalıştırıyoruz
+## Şimdi Kurulum için servis dosyamızı çalıştırıyoruz /// V0.11.1
 ```
 bash ./ruesandora.sh 
 ```
 
-## Versiyon kontrol ediyoruz güncel versiyon V0.11.6
-
+## Versiyon kontrol ediyoruz güncel versiyon V0.11.1
 ```
 curl -X POST -H "Content-Type:application/json" --data '{"jsonrpc":"2.0","method":"eth_version","id":64}' http://127.0.0.1:8545
 ```
+##Çıktı
+```
+V0.11.1
+```
 
-
-# Nodun eşleştiğini görmek için aşağıdaki komudu giriyoruz:
-
+## Node bloklarını izlemek servis dosyası oluşturuyoruz aşağıdaki komudu yazın ( Daha önceki bunu kurduysanız bu adımıgeçin)
 ```
 nano monitor.sh 
 ```
-## Açılan ekranda eğer eski kurulum dosyası varsa CTRL+K ile satır satır silin aşağıdaki kodları tek seferde copy past yapın CTRL+X ve Y ile kaydedip çıkın
+## açılan ekranda CTRL+K ile tektek satırları silin aşağıdaki kodları tek seferde copy past yapın CTRL+X ve Y ile kaydedip çıkın
+
 
 ```
-
 #!/bin/bash
 function info(){
      cn=0
@@ -202,14 +183,18 @@ function main(){
 main "$@"
 ```
 
-## Güncel blokları görmek için servis dosyası çalıştırıyoruz aşağıdaki komudu yazın
 
+
+
+
+
+## Güncel blokları görmek için servis dosyası çalıştırıyoruz aşağıdaki komudu yazın 
 ```
 bash ./monitor.sh
 ```
 
-## Bir süre beklediniz Peer bulamadıysanız nodu restart yapın:
-
+## Hiç olmazsa silip baştan kurun:
 ```
-docker restart wormholes
+docker stop wormholes && docker rm wormholes && docker rmi wormholestech/wormholes:v1
+rm -rf /wm
 ```

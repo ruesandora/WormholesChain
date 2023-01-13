@@ -9,6 +9,12 @@ curl -X POST -H "Content-Type:application/json" --data '{"jsonrpc":"2.0","method
 ```
 
  * Eğer komut çıktısında  V0.9.4 değilse aşağıdaki adımı yapın. 
+ * Eğer komut çıktısında  V0.9.4 değilse aşağıdaki adımı yapın. 
+ * Eğer komut çıktısında  V0.9.4 değilse aşağıdaki adımı yapın. 
+ * Eğer komut çıktısında  V0.9.4 değilse aşağıdaki adımı yapın. 
+ * Eğer komut çıktısında  V0.9.4 değilse aşağıdaki adımı yapın. 
+ * Eğer komut çıktısında  V0.9.4 değilse aşağıdaki adımı yapın. 
+ * Eğer komut çıktısında  V0.9.4 değilse aşağıdaki adımı yapın. 
 
 ## Kurulum için servis dosyası oluşturuyoruz aşağıdaki komudu yazın 
  ```
