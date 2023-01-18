@@ -11,6 +11,23 @@ docker stop wormholes && docker rm wormholes && docker rmi wormholestech/wormhol
 ```
 rm -rf /wm
 ```
+## Önce Sunucumuzu güncelliyoruz:
+```
+sudo apt-get update && sudo apt-get upgrade
+```
+
+## Şimdi Docker Kurulumu Yapıyoruz:
+```
+sudo apt install docker.io -y
+```
+
+```
+sudo systemctl enable --now docker
+```
+
+```
+systemctl restart docker.service
+```
 
 ## Kurulum için servis dosyası oluşturuyoruz aşağıdaki komudu yazın 
 ```
